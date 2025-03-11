@@ -8,10 +8,10 @@
 </head>
 <body>
 
-    <!-- Header with Logo and Navbar -->
+    <!-- Header with Logo and Navigation -->
     <header>
         <div class="logo">
-            <img src="logo.jpeg" alt="Logo"> <!-- Replace 'logo.png' with your actual logo -->
+            <img src="logo.png" alt="Logo"> <!-- Replace 'logo.png' with your actual logo -->
         </div>
         <nav>
             <ul>
@@ -46,6 +46,31 @@
             <p><strong>🆔 ID:</strong> 646746270 (10178)</p>
         </div>
     </div>
+
+    <!-- JavaScript for Random Music -->
+    <script>
+        const musicTracks = [
+            'https://sf16-ies-music.tiktokcdn.com/obj/ies-music-euttp/7448235332111928097.mp3',
+            'https://g.top4top.io/m_328618scq0.mp3',
+            'https://sf16-ies-music-va.tiktokcdn.com/obj/musically-maliva-obj/7309353473656769286.mp3',
+            'https://sf16-ies-music-va.tiktokcdn.com/obj/musically-maliva-obj/7374389952207522566.mp3'
+        ];
+
+        function getRandomTrack() {
+            const randomIndex = Math.floor(Math.random() * musicTracks.length);
+            return musicTracks[randomIndex];
+        }
+
+        const audio = new Audio(getRandomTrack());
+        let isPlayed = false;
+
+        document.body.addEventListener('click', () => {
+            if (!isPlayed) {
+                audio.play();
+                isPlayed = true;
+            }
+        });
+    </script>
 
 </body>
 </html>
