@@ -1,29 +1,30 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f5f2;
     margin: 0;
     padding: 0;
+    background-color: #f7f7f7;
 }
 
-/* Header with Logo and Navigation */
+/* Header */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
+    justify-content: space-between;
+    padding: 20px 50px;
     background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-    width: 50px; /* Adjust size as needed */
+    height: 50px;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
@@ -32,43 +33,37 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    color: #333;
     font-weight: bold;
-    color: black;
 }
 
-/* Main Content */
+/* Main Container */
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 50px auto;
-    width: 80%;
+    margin: 50px;
 }
 
-/* Contact Form */
+/* Form Container */
 .form-container {
-    background-color: #4a3c39;
-    padding: 20px;
+    background-color: #4b3b3b;
+    padding: 30px;
     border-radius: 10px;
-    width: 40%;
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .fill-btn {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
     background-color: #fff;
-    padding: 10px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-}
-
-input, textarea {
+form input, form textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -76,28 +71,26 @@ input, textarea {
     border-radius: 5px;
 }
 
-textarea {
+form textarea {
     height: 100px;
 }
 
-button {
-    background-color: #2d2d2d;
-    color: white;
+form button {
+    background-color: #fff;
+    color: black;
     border: none;
     padding: 10px;
-    border-radius: 5px;
     cursor: pointer;
 }
 
-/* Contact Info */
+/* Contact Info - Moved Right */
 .contact-info {
-    margin-left: 150px;
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    width: 40%;
-}
-
-.contact-info h2 {
-    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    /* Moves the contact info slightly to the right */
+    position: relative;
+    left: 50px;
 }
