@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f5f2;
@@ -5,20 +6,28 @@ body {
     padding: 0;
 }
 
-nav {
-    text-align: center;
-    padding: 15px;
+/* Header with Logo and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
     background-color: #fff;
+}
+
+.logo img {
+    width: 50px; /* Adjust size as needed */
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
@@ -27,6 +36,7 @@ nav ul li a {
     color: black;
 }
 
+/* Main Content */
 .container {
     display: flex;
     justify-content: center;
@@ -35,6 +45,7 @@ nav ul li a {
     width: 80%;
 }
 
+/* Contact Form */
 .form-container {
     background-color: #4a3c39;
     padding: 20px;
@@ -78,6 +89,7 @@ button {
     cursor: pointer;
 }
 
+/* Contact Info */
 .contact-info {
     margin-left: 50px;
     background-color: white;
