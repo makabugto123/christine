@@ -92,5 +92,5 @@ form button {
     
     /* Moves the contact info slightly to the right */
     position: relative;
-    left: 50px;
+    left: -50px;
 }
